@@ -155,6 +155,12 @@ a.bg-image { display: block;}
 .bg-pos-l { background-position: left; }
 .bg-pos-r { background-position: right; }
 
+.logo-main {
+  max-width: 30vw;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* ------------ Typography Styles ----------------------- */
 
