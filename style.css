@@ -3,3 +3,503 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* ----------- Color Variables --------- */
+/* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
+
+/* ----------- CSS RESET --------- */
+
+  
+img { max-width: 100%; height: auto; }
+
+/* Override default gridlex padding */ 
+[class*=col] { padding: 0; }
+[class*=grid] { margin: 0; }
+
+section { position: relative; }
+
+
+/* ---------- Negative Space Utility Classes  ------------------ */ 
+
+.capped-width-wide      { max-width: 1600px; margin: auto; }
+.capped-width           { max-width: 1200px; margin: auto; }
+.capped-width-narrow    { max-width: 1000px; margin: auto; }
+.capped-width-v-narrow  { max-width: 800px;  margin: auto; }
+
+
+.tall-100 { min-height: 100vh; }
+.tall-90  { min-height: 90vh; }
+.tall-80  { min-height: 80vh; }
+.tall-70  { min-height: 70vh; }
+.tall-60  { min-height: 60vh; }
+.tall-50  { min-height: 50vh; }
+
+/* Padding Utility Classes */ 
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
+
+.padded-t  { padding-top: 5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%; }
+.padded-r  { padding-right: 5%; }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+
+/* Margin Utility Classes */ 
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-05 { margin-top: 0.5rem; }
+.margin-b-05 { margin-bottom: 0.5rem; }
+.margin-l-05 { margin-left: 0.5rem; }
+.margin-r-05 { margin-right: 0.5rem; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+/* ------------ Backgrounds & Background Images  ----------------------- */
+
+.bg-dark     { background-color: var(--dark);}
+.bg-featured { background-color: var(--featured);}
+.bg-medium   { background-color: var(--medium); }
+.bg-light    { background-color: var(--light); }
+.bg-v-light  { background-color: var(--v-light); }
+
+.bg-image {
+    background-color: var(--light); /* Set a fall-back color while images are loading */ 
+    background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.bg-overlay::after {
+  z-index: 1;
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.bg-overlay > * {
+  z-index: 2;
+  position: relative;
+}
+/* Add a second class to change the color or style  */
+
+.bg-overlay-gradient::after { 
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+} 
+
+.bg-overlay-featured::after { 
+  background-color: var(--featured);
+  opacity: 0.5;
+} 
+
+/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+
+a.bg-image { display: block;}
+
+.landscape     { padding-bottom: 66% ; }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
+
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+/* ------------ Typography Styles ----------------------- */
+
+.left    { text-align: left; }
+.right   { text-align: right; }
+.center  { text-align: center; }
+.uppercase    { text-transform: uppercase; }
+
+body {
+  font-family: 'Mulish', serif;  /* Add your font here */ 
+  color: var(--dark-text);
+}
+
+h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+h2 { font-size: 2rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+
+p, li {
+  line-height: 1.4; 
+  margin-bottom: 1rem;
+  font-family: 'Martel', serif; 
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+	margin-bottom: 0;
+}
+
+/* Unique Typography Styles  */
+.emphasis       { font-size: 1.2rem; }
+.text-featured  { color: var(--featured-text);}
+.text-light     { color: var(--light-text);}
+.subtle         { opacity: 0.8;     }
+.subtitle       { font-size: 0.8rem; }
+
+
+/* ------------ Buttons & Links ------------ */
+a {
+    color: inherit;
+}
+
+a:hover {
+  color: var(--featured-text); 
+}
+
+p a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+p a:hover { 
+  color: var(--featured-text); 
+}
+
+.button { 
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid;
+}
+
+.button:hover {
+    color: var(--featured-text);
+}
+
+.subtle-button {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+/* suggested additional styles 
+- .button-inverted, .button-subtle, .button-lg  */
+
+
+/* ------------ Header & Hamburger Menu -------------- */
+header {
+    padding: 1rem 5%;
+}
+
+nav a {
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav a:hover {
+  color: var(--featured-text);
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2.5rem;
+} 
+
+
+/* Dropdown styles */
+
+.dropdown { 
+  position: relative; 
+  display: inline-block;
+  border: 1px solid orange;
+}
+
+.dropdown-title {
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  padding: 0.5rem;
+  display:none; 
+  background-color: white;
+  z-index: 2;
+  text-align: left;
+  min-width: 10rem;
+  border: 1px solid mediumvioletred;
+}
+
+.dropdown:hover .dropdown-content{ 
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.2rem;
+}
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    position: fixed;
+    right: 5%;
+    top: 0rem;
+    z-index: 4;
+  }
+  
+  /* Styles when the hamburger button is active  */
+  .hamburger-button.active {
+    color: white;
+  }
+  
+  
+  .mobile-menu {
+    display: none; 
+    background-color: var(--featured);
+    padding: 5%;
+    position: fixed; 
+    z-index:3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 2%;
+    display: block;
+    font-weight: normal;
+  }
+
+
+
+/* ------------ Contact Forms  ----------------------- */
+
+
+
+/* ------------ Blogging elements  ----------------------- */
+
+
+
+/* Post Loop Item  */
+
+.post-item {
+  text-decoration: none;
+}
+
+
+/* Individual Elements */
+
+.tag {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+
+.post-info {
+  font-size: 0.8rem;
+  color: var(--medium-text);
+}
+
+/* Individual Blog Post Pages  */
+
+.blog-content h1 {
+  font-family: 'Martel', serif; 
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.blog-content p {
+  line-height: 1.6;
+}
+
+.blog-content hr {
+  border: none;
+  border: 1px solid var(--medium);
+}
+
+
+/* Sidebar */
+.sidebar-item {
+  border: 2px solid var(--light);
+  margin-bottom: 1rem;
+  color: var(--medium-text);
+}
+.sidebar-item p {
+  font-family: 'Mulish', serif; 
+  font-weight: 300;
+}
+
+.recent-posts-nav a{
+  display: block;
+  font-weight: 300;
+}
+
+/* Social Share Nav  */
+
+.social-share a {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Miscelaneous elements  */
+
+hr.short {
+  border: 1px solid var(--dark-text);
+  width: 2rem;
+  margin: 1rem 0;
+}
+
+hr.short.center {
+  margin:auto;
+  margin: 1rem auto;
+}
+
+
+/* ------------ Page Name  ----------------------- */
+
+
+
+
+
+
+
+
+
+/* ------------ Responsive Styles ----------------------- */
+
+/* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none; 
+}
+
+.inline { 
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:64em) {
+
+	.show-md { display: block; }
+	.hide-md { display: none;  }
+
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+
+@media(max-width:48em) {
+
+	.show-sm { display: block; }
+	.hide-sm { display: none;  }
+
+  .sm-text-center { text-align: center; }
+  .sm-text-left   { text-align: left; }
+  .sm-text-right  { text-align: right; }
+
+  .sm-padded     { padding: 5%; }
+  .sm-padded-1   { padding: 1rem; }
+  .sm-padded-05  { padding: 0.5rem; }
+
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
+
+  .sm-landscape     { padding-bottom: 66% ; }
+  .sm-portrait-tall { padding-bottom: 175%; }
+  .sm-portrait      { padding-bottom: 125%; }
+  .sm-square        { padding-bottom: 100%; }
+
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:36em) {
+
+		.show-xs { display: block; }
+		.hide-xs { display: none;  }
+
+    .subtle-heading-xs {
+      font-weight: 300;
+      font-family: 'Martel', serif; 
+    }
+}
