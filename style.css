@@ -102,7 +102,7 @@ section { position: relative; }
 .bg-featured { background-color: var(--featured);}
 .bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
-.bg-v-light  { background-color: var(--v-light); }
+.bg-accent  { background-color: var(--accent); }
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
@@ -156,9 +156,25 @@ a.bg-image { display: block;}
 .bg-pos-r { background-position: right; }
 
 .logo-main {
-  background-image: url(assets/Logos/primary-logo/Primary\ Logo\ 1-100.jpg);
+  background-image: url('assets/Logos/primary-logo/Primary\ Logo\ 1-100.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%; /* Adjust width as needed */
+  height: 0;
 }
 
+
+/* ------------ Social Media Icons ----------------------- */
+
+.fb-icon{         background-image: url(assets/Icons/FB\ Icon1x.png);}
+.instagram-icon{  }
+.linkedin-icon{   }
+.dribble-icon{    }
+.email-icon{      }
+.pinterest-icon{  }
+.github-icon{     }
 
 /* ------------ Typography Styles ----------------------- */
 
@@ -168,11 +184,14 @@ a.bg-image { display: block;}
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'Mulish', serif;  /* Add your font here */ 
+  font-family: etna, sans-serif;
+  font-weight: 300;
   color: var(--dark-text);
 }
 
 h2, h3, h4, h5, h6 {
+  font-family: portofino, sans-serif;
+  font-weight: 200;
   line-height: 1.1;
   margin-bottom: 1.2rem;
 }
@@ -202,8 +221,9 @@ p:last-child {
 
 /* Unique Typography Styles  */
 .emphasis       { font-size: 1.2rem; }
-.text-featured  { color: var(--featured-text);}
-.text-light     { color: var(--light-text);}
+.text-featured  { color: var(--featured-text); }
+.text-light     { color: var(--light-text); }
+.text-accent    { color: var(--accent-text); }
 .subtle         { opacity: 0.8;     }
 .subtitle       { font-size: 0.8rem; }
 
@@ -435,9 +455,25 @@ hr.short.center {
 
 
 
+/* ---------- FOOTER ---------- */
 
+.footer-menu a {
+  position: relative;
+  padding-left: 20px; /* Adjust as needed for spacing */
+}
 
-
+.footer-menu a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 1px; /* Width of the vertical line */
+  background-color: var(--accent); 
+  display: inline-block;
+  margin-right: 10px; /* Adjust as needed for spacing */
+}
 
 
 /* ------------ Responsive Styles ----------------------- */

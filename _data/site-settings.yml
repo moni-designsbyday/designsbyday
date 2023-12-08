@@ -1,6 +1,6 @@
 seo:
-  site_name:
-  title:
+  site_name: Designs by Day
+  title: Designs by Day
   description:
   keywords:
   social_image:
@@ -10,9 +10,15 @@ social:
   instagram_username:
   facebook_url:
   twitter_username:
-design:
+design: 
+  dark-text_color: '#10080b'
+  medium-text_color: '#918d8d'
+  light-text_color: '#ece8ea'
+  featured-text_color: '#c0547b'
+  accent-text_color: '#f2d9e1'
   dark_color: '#10080b'
   medium_color: '#918d8d'
   light_color: '#ece8ea'
+  v-light_color: '#f9f9f9'
   featured_color: '#c0547b'
   accent_color: '#f2d9e1'
