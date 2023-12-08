@@ -1,0 +1,18 @@
+seo:
+  site_name:
+  title:
+  description:
+  keywords:
+  social_image:
+  author:
+  favicon_image:
+social:
+  instagram_username:
+  facebook_url:
+  twitter_username:
+design:
+  dark_color: '#10080b'
+  medium_color: '#918d8d'
+  light_color: '#ece8ea'
+  featured_color: '#c0547b'
+  accent_color: '#f2d9e1'
