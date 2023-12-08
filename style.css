@@ -156,9 +156,7 @@ a.bg-image { display: block;}
 .bg-pos-r { background-position: right; }
 
 .logo-main {
-  max-width: 30vw;
-  display: block;
-  margin: 0 auto;
+  background-image: url(assets/Logos/primary-logo/Primary\ Logo\ 1-100.jpg);
 }
 
 
