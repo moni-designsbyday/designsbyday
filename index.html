@@ -3,7 +3,7 @@ layout: default
 title: Homepage
 ---
 
-<div class="grid-spaceAround padded bg-light">
+<div class="grid-spaceAround padded-sm bg-light">
     <div class="col-3-middle tall-50 bg-image padded-sm bg-coding"></div>
     <h1 class="col-4_sm-12-middle">
         Harnessing the strength of minimalism, I shape influential creations that lift your individual vision to soaring heights.
@@ -11,7 +11,7 @@ title: Homepage
     <div class="col-3-middle bg-image tall-50 padded-sm bg-designing"></div>
 </div>
 
-{% cta-banner.html %}
+{% include cta-banner.html %}
 
 <div class="bg-dark padded-xs">
     <h6 class="center text-light">
@@ -19,13 +19,51 @@ title: Homepage
     </h6>
 </div>
 
-<div class="padded grid-spaceAround">
-    <h6 class="col-6">
-        Discover the unique brands I've brought to life
-    </h6>
-    <div class="col-6 grid-spaceBetween">
-        <div class="col-3 bg-image padded-sm bg-design1"></div>
-        <div class="col-3 bg-image padded-sm bg-design2"></div>
-        <div class="col-3 bg-image padded-sm bg-design3"></div>
+<div class="padded grid-spaceAround bg-medium">
+    <div class="col-4-middle grid-spaceAround">
+        <h6 class="col-12 text-light">
+            Discover the newest <span class="bold-text">unique</span> projects I've brought to life
+        </h6>
+        {% include cta-button.html %}
     </div>
+    <div class="col-8 grid-spaceAround-middle">
+        <div class="col-3 bg-image padded-sm bg-design1 tall-30"></div>
+        <div class="col-3 bg-image padded-sm bg-design2 tall-30"></div>
+        <div class="col-3 bg-image padded-sm bg-design3 tall-30"></div>
+    </div>
+</div>
+
+<hr class="full-width-divider">
+
+<div class="center padded-sm bg-light">
+    <h5>"Design is the silent ambassador of your brand."</h5>
+    <p>- Paul Rand</p>
+</div>
+
+
+<h3 class="padded-xs center">Testimonials</h3>
+
+<div class="padded bg-medium"> 
+    <!-- Replace these images when I have ones that are better suited -->
+    <div class="col-4 grid-spaceAround-middle">
+        <div class="col-3 bg-image padded-sm bg-bounce-logo tall-30"></div>
+        <div class="col-3 bg-image padded-sm bg-bounce-packaging tall-30"></div>
+        <div class="col-3 bg-image padded-sm bg-bounce-case tall-30"></div>
+    </div>
+</div>
+
+<div class="grid-spaceBetween">
+    <div class="col-4 bg-image padded"></div>
+    <div class="col-7 padded">
+        <h4>Get to Know Me</h4>
+        <p>Hello, I'm Monique, the creative force behind Designs by Day—a culmination of my lifelong passion for design and creativity. From my early days sketching fashionable ensembles in a Monster High book to my journey through various design disciplines, my love for creative projects has been a constant companion.
+        <br> briefly exploring other paths, including a detour into primary teaching, I realized that design was the missing piece in my life. The pandemic provided an opportunity to delve deeper, leading me to pursue a Bachelor of Design, where I graduated with distinction, validating my creative journey.
+        <br>What drives my creativity is the opportunity to bring people's visions to life. Drawing inspiration from my desire to be a listener and advocate, I use design as a medium to amplify voices and create a space where everyone feels heard and seen. In another life, I might have been a counsellor or psychologist, but in this one, design allows me to connect and empower others.
+        <br>Client-Centric Design, Efficiency, Empowerment, and Collaboration define Designs by Day. I am a logical creative, ensuring that every design is not just innovative but also user-friendly through extensive development and testing.
+        Pop of Colour, Modern, Simplistic. I believe in crafting impactful designs that convey messages with clarity. It's about embracing vibrant aesthetics while maintaining a clean and modern appeal.
+        <br>My mission is simple: to convey your message authentically. I design for holistic businesses, driven by your mission, vision, goals, and target audience. Your involvement is paramount throughout the process, ensuring that your business is not just represented but deeply understood in every design decision.
+        Expect a hands-on, collaborative journey where your input matters. Your business's success is my top priority. Let's create something extraordinary together!</p>
+        {% include cta-button.html %}
+    </div>
+    
 </div>

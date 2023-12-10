@@ -158,7 +158,7 @@ a.bg-image { display: block;}
 .landscape     {padding-bottom: 66%;}
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
-.square        { padding-bottom: 100%; }
+.square        { width: 100%; height: 100%; }
 
 
 /* Background Position */
@@ -188,6 +188,24 @@ a.bg-image { display: block;}
 
 .bg-designing {
   background-image: url(assets/images/female-designing.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-design1{
+  background-image: url(assets/projects/beyond-coffee.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-design2{
+  background-image: url(assets/projects/sleep-co.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-design3{
+  background-image: url(assets/projects/bounce-co.png);
   background-position: center;
   background-size: cover;
 }
@@ -317,11 +335,13 @@ p a:hover {
     text-decoration: none;
     line-height: 1;
     padding: 0.5rem 1.5rem;
-    border: 1px solid;
+    border: 1px solid var(--dark);
+    background-color: var(--featured);
 }
 
 .button:hover {
     color: var(--featured-text);
+    background-color: var(--accent);
 }
 
 .subtle-button {
