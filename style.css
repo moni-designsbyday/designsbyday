@@ -33,11 +33,17 @@ section { position: relative; }
 .tall-70  { min-height: 70vh; }
 .tall-60  { min-height: 60vh; }
 .tall-50  { min-height: 50vh; }
+.tall-40  { min-height: 40vh; }
+.tall-30  { min-height: 30vh; }
+.tall-20  { min-height: 20vh; }
+.tall-10  { min-height: 10vh; }
 
 /* Padding Utility Classes */ 
+.padded-xs { padding: 1%; }
 .padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
 .padded-lg { padding: 10%;  }
+.padded-xl { padding: 15%;  }
 
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem; }
@@ -93,6 +99,13 @@ section { position: relative; }
 .margin-l-0 { margin-left: 0; }
 .margin-r-0 { margin-right: 0; }
 
+.margin-none {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
@@ -105,12 +118,11 @@ section { position: relative; }
 .bg-accent  { background-color: var(--accent); }
 
 .bg-image {
-    background-color: var(--light); /* Set a fall-back color while images are loading */ 
     background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
-    background-color: #24282b;
+    border-radius: 5%;
 }
 
 .bg-overlay::after {
@@ -123,7 +135,6 @@ section { position: relative; }
   height: 100%;
   background-color: rgba(0,0,0,0.5);
 }
-
 
 .bg-overlay > * {
   z-index: 2;
@@ -159,21 +170,72 @@ a.bg-image { display: block;}
 .bg-padded {padding: 25%;}
 
 .logo-main {
-  background-image: url('assets/logos/primary-logo/primary-logo-1.jpg'); 
+  background-image: url('assets/logos/primary-logo/primary-logo.png'); 
   background-position: center;
+  background-size: contain;
 }
 
+.logo-wrapper {
+  padding: 8%;
+  background-repeat: no-repeat;
+}
 
+.bg-coding{
+  background-image: url(assets/images/coding-laptop-and-screens.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-designing {
+  background-image: url(assets/images/female-designing.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
 /* ------------ Social Media Icons ----------------------- */
 
-.fb-icon{         background-image: url(assets/icons/facebook.png);}
-.instagram-icon{  background-image: url(assets/icons/instagram.png);}
-.linkedin-icon{   background-image: url(assets/icons/linkedin.png);}
-.dribble-icon{    background-image: url(assets/icons/dribble.png);}
-.email-icon{      background-image: url(assets/icons/email.png);}
-.pinterest-icon{  background-image: url(assets/icons/pinterest.png);}
-.github-icon{     background-image: url(assets/icons/github.png);}
+.fb-icon{
+  background-image: url(assets/icons/facebook.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.instagram-icon{  
+  background-image: url(assets/icons/instagram.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.linkedin-icon{   
+  background-image: url(assets/icons/linkedin.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.dribble-icon{    
+  background-image: url(assets/icons/dribble.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.email-icon{      
+  background-image: url(assets/icons/email.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pinterest-icon{  
+  background-image: url(assets/icons/pinterest.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.github-icon{     
+  background-image: url(assets/icons/github.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /* ------------ Typography Styles ----------------------- */
 
@@ -183,13 +245,13 @@ a.bg-image { display: block;}
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: etna, sans-serif;
+  font-family: 'etna', sans-serif;
   font-weight: 300;
   color: var(--dark-text);
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: portofino, sans-serif;
+  font-family: 'portofino', sans-serif;
   font-weight: 200;
   line-height: 1.1;
   margin-bottom: 1.2rem;
@@ -204,7 +266,7 @@ h6 { font-size: 1.2rem; }
 p, li {
   line-height: 1.4; 
   margin-bottom: 1rem;
-  font-family: 'Martel', serif; 
+  font-family: 'etna', sans-serif;
   font-weight: 200;
   font-size: 1rem;
 }
@@ -226,6 +288,10 @@ p:last-child {
 .subtle         { opacity: 0.8;     }
 .subtitle       { font-size: 0.8rem; }
 
+.bold-text{
+  font-weight: 700;
+}
+
 
 /* ------------ Buttons & Links ------------ */
 a {
@@ -233,7 +299,8 @@ a {
 }
 
 a:hover {
-  color: var(--featured-text); 
+  color: inherit;
+  font-weight: 600; 
 }
 
 p a {
@@ -264,6 +331,15 @@ p a:hover {
 
 /* suggested additional styles 
 - .button-inverted, .button-subtle, .button-lg  */
+
+.footer-button a{
+  color: inherit;
+}
+
+.footer-button a:hover{
+  color: var(--dark-text);
+  font-weight: inherit;
+}
 
 
 /* ------------ Header & Hamburger Menu -------------- */
@@ -472,6 +548,13 @@ hr.short.center {
   background-color: var(--accent); 
   display: inline-block;
   margin-right: 10px; /* Adjust as needed for spacing */
+}
+
+/* ---------- OTHER ---------- */
+
+.full-width-divider {
+  width: 100%;
+  border: 2px solid var(--dark); /* Set your desired color */
 }
 
 
