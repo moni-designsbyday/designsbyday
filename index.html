@@ -46,16 +46,16 @@ title: Homepage
 <div class="padded bg-medium"> 
     <!-- Replace these images when I have ones that are better suited -->
     <div class="col-4 grid-spaceAround-middle">
-        <div class="col-3 bg-image padded-sm bg-bounce-logo tall-30"></div>
-        <div class="col-3 bg-image padded-sm bg-bounce-packaging tall-30"></div>
+        <div class="col-8 bg-image padded-sm bg-bounce-logo tall-30"></div>
+        <div class="col-4 bg-image padded-sm bg-bounce-packaging tall-30"></div>
         <div class="col-3 bg-image padded-sm bg-bounce-case tall-30"></div>
     </div>
 </div>
 
-<div class="grid-spaceBetween">
-    <div class="col-4 bg-image padded"></div>
-    <div class="col-7 padded">
-        <h4>Get to Know Me</h4>
+<section class="grid">
+    <div class="col-6_sm-12 bg-image tall-50 bg-padded bg-straight-side"></div>
+    <div class="col-6-middle_sm-12 padded">
+        <h2>Get to Know Me</h2>
         <p>Hello, I'm Monique, the creative force behind Designs by Day—a culmination of my lifelong passion for design and creativity. From my early days sketching fashionable ensembles in a Monster High book to my journey through various design disciplines, my love for creative projects has been a constant companion.
         <br> briefly exploring other paths, including a detour into primary teaching, I realized that design was the missing piece in my life. The pandemic provided an opportunity to delve deeper, leading me to pursue a Bachelor of Design, where I graduated with distinction, validating my creative journey.
         <br>What drives my creativity is the opportunity to bring people's visions to life. Drawing inspiration from my desire to be a listener and advocate, I use design as a medium to amplify voices and create a space where everyone feels heard and seen. In another life, I might have been a counsellor or psychologist, but in this one, design allows me to connect and empower others.
@@ -65,5 +65,19 @@ title: Homepage
         Expect a hands-on, collaborative journey where your input matters. Your business's success is my top priority. Let's create something extraordinary together!</p>
         {% include cta-button.html %}
     </div>
+</section>
     
-</div>
+<section class="bg-medium padded-xs">
+    <div class="padded-xs grid-center">
+        <div class="col-5 padded padded-tb-0 padded-r-2 margin-l">
+            <h4 class="text-light center">Brand Strategy and Design</h4>
+            <div class="bg-image padded-sm tall-50"></div>
+        </div>
+        <div  class="col-5 padded padded-tb-0 padded-l-2 margin-r">
+            <h4 class="text-light center">Website Development</h4>
+            <div class="bg-image padded-sm tall-50"></div>
+        </div>
+    </div>
+    <div class="center padded-xs">{% include cta-button.html %}</div>
+</section>
+{% include short-enquiry-form.html %}

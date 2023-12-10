@@ -71,6 +71,7 @@ section { position: relative; }
 .padded-b-0 { padding-bottom: 0; }
 .padded-l-0 { padding-left: 0; }
 .padded-r-0 { padding-right: 0; }
+.padded-tb-0 {padding-top: 0; padding-bottom: 0;}
 
 /* Margin Utility Classes */ 
 
@@ -124,6 +125,8 @@ section { position: relative; }
     background-repeat: no-repeat;
     border-radius: 5%;
 }
+
+.bg-straight-side {border-radius: 0% 5% 5% 0%;}
 
 .bg-overlay::after {
   z-index: 1;
@@ -462,7 +465,36 @@ nav a:hover {
 
 /* ------------ Contact Forms  ----------------------- */
 
+input, textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border: 2px solid transparent;
+}
 
+input:focus,
+textarea:focus {
+  border: 2px solid var(--featured);
+  color: var(--dark);
+  background-color: var(--accent);
+  outline: none;
+}
+
+.submit-button{
+  background-color: var(--featured);
+  color: var(--light);
+  font-family: inherit;
+  border: 2px solid var(--accent);
+}
+
+.submit-button:hover{
+  background-color: var(--accent);
+  border: 2px solid var(--featured);
+  columns: var(--dark);
+}
 
 /* ------------ Blogging elements  ----------------------- */
 
@@ -531,20 +563,6 @@ nav a:hover {
   padding: 0.25rem 0.5rem;
 }
 
-/* Miscelaneous elements  */
-
-hr.short {
-  border: 1px solid var(--dark-text);
-  width: 2rem;
-  margin: 1rem 0;
-}
-
-hr.short.center {
-  margin:auto;
-  margin: 1rem auto;
-}
-
-
 /* ------------ Page Name  ----------------------- */
 
 
@@ -572,11 +590,25 @@ hr.short.center {
 
 /* ---------- OTHER ---------- */
 
+hr.short {
+  border: 1px solid var(--dark-text);
+  width: 2rem;
+  margin: 1rem 0;
+}
+
+hr.short.center {
+  margin:auto;
+  margin: 1rem auto;
+}
+
 .full-width-divider {
   width: 100%;
   border: 2px solid var(--dark); /* Set your desired color */
 }
 
+.curved-edges{
+  border-radius: 10px; /* Set your desired border radius */
+}
 
 /* ------------ Responsive Styles ----------------------- */
 
