@@ -73,6 +73,8 @@ section { position: relative; }
 .padded-r-0 { padding-right: 0; }
 .padded-tb-0 {padding-top: 0; padding-bottom: 0;}
 
+.padded-xl-lr { padding-right: 15%; padding-left: 15%;  }
+
 /* Margin Utility Classes */ 
 
 .margin-t { margin-top: 5%; }
@@ -109,6 +111,7 @@ section { position: relative; }
 
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
+.margin-lr-large { margin-left: 7.5%; margin-right: 7.5%; }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
