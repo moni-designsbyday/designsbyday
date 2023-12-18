@@ -34,6 +34,7 @@ section { position: relative; }
 .tall-60  { min-height: 60vh; }
 .tall-50  { min-height: 50vh; }
 .tall-40  { min-height: 40vh; }
+.tall-35  { min-height: 35vh; }
 .tall-30  { min-height: 30vh; }
 .tall-20  { min-height: 20vh; }
 .tall-10  { min-height: 10vh; }
@@ -113,6 +114,17 @@ section { position: relative; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 .margin-lr-large { margin-left: 7.5%; margin-right: 7.5%; }
 
+.round-corners{
+  border-radius: 20px;
+  overflow: hidden; 
+}
+
+.middle-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .bg-dark     { background-color: var(--dark);}
@@ -122,7 +134,7 @@ section { position: relative; }
 .bg-accent  { background-color: var(--accent); }
 
 .bg-image {
-    background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
+    background-image: url('https://source.unsplash.com//animal-skull-table-decor-TFY0BmPk5sc');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -336,6 +348,23 @@ p a:hover {
   color: var(--featured-text); 
 }
 
+.book-chat {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: var(--featured);
+  text-align: center;
+  color: var(--light);
+}
+
+.book-chat:hover {
+  font-weight: inherit;
+  color: var(--featured-text);
+  background-color: var(--accent);
+}
+
 .button { 
     display: inline-block;
     text-decoration: none;
@@ -348,6 +377,17 @@ p a:hover {
 .button:hover {
     color: var(--featured-text);
     background-color: var(--accent);
+}
+
+.in-para-link {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.in-para-link:hover {
+  color: var(--featured);  
 }
 
 .subtle-button {
