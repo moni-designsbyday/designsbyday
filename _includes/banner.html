@@ -1,3 +1,12 @@
-<h6 class="padded-xs bg-featured center margin-b-0 text-light">
-    Book a Coffee Chat for a 2024 start!
-</h6>
+{% assign hover_color = "" %}
+{% if page.banner_background_class == "bg-featured" %}
+    {% assign hover_color = "var(--light)" %}
+{% elsif page.banner_background_class == "bg-accent" %}
+    {% assign hover_color = "var(--featured)" %}
+{% endif %}
+
+<div class="{{ page.banner_background_class }} padded-xs text-light">
+    <h6 class="center">
+        Get in touch, let's have a <span class="bold-text banner-button">{% include coffee-chat-button.html hover_color=hover_color %}</span>. 
+    </h6>
+</div>

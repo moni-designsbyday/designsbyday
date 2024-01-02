@@ -191,11 +191,12 @@ a.bg-image { display: block;}
   background-image: url('assets/logos/primary-logo/primary-logo.png'); 
   background-position: center;
   background-size: contain;
+  padding: 8%;
+  background-repeat: no-repeat;
 }
 
 .logo-wrapper {
-  padding: 8%;
-  background-repeat: no-repeat;
+
 }
 
 .bg-coding{
@@ -328,6 +329,12 @@ p:last-child {
   font-weight: 700;
 }
 
+.logo h2 {
+  font-size: 3rem;
+  font-weight:normal;
+  text-align: center;
+}
+
 
 /* ------------ Buttons & Links ------------ */
 a {
@@ -388,6 +395,17 @@ p a:hover {
 
 .in-para-link:hover {
   color: var(--featured);  
+}
+
+.banner-button {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.banner-button:hover {
+  color: var(--accent);  
 }
 
 .subtle-button {
