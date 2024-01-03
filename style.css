@@ -134,30 +134,16 @@ section { position: relative; }
 .bg-accent  { background-color: var(--accent); }
 
 .bg-image {
-    background-image: url('https://source.unsplash.com//animal-skull-table-decor-TFY0BmPk5sc');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
     border-radius: 5%;
+    background-color: var(--dark);
 }
 
-.bg-straight-side {border-radius: 0% 5% 5% 0%;}
+.bg-straight-side-right {border-radius: 0% 5% 5% 0%;}
+.bg-straight-side-left {border-radius: 5% 0% 0% 5%;}
 
-.bg-overlay::after {
-  z-index: 1;
-  content: ""; 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.bg-overlay > * {
-  z-index: 2;
-  position: relative;
-}
 /* Add a second class to change the color or style  */
 
 .bg-overlay-gradient::after { 
@@ -199,15 +185,34 @@ a.bg-image { display: block;}
 
 }
 
-.bg-coding{
-  background-image: url(assets/images/coding-laptop-and-screens.jpg);
+.bg-me{
+  background-image: url(assets/personal-images/IMG_4287.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+.bg-wireframes{
+  background-image: url(assets/images/working-in-studio.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .bg-designing {
-  background-image: url(assets/images/female-designing.jpg);
+  background-image: url(assets/images/wireframes.jpg);
   background-position: center;
+  background-size: cover;
+}
+
+.bg-coding {
+  background-image: url(assets/images/working-on-code.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-me-designing {
+  background-image: url(assets/personal-images/IMG_4257.jpg);
+  background-position: 50% 62%;
   background-size: cover;
 }
 
@@ -227,6 +232,21 @@ a.bg-image { display: block;}
   background-image: url(assets/projects/bounce-co.png);
   background-position: center;
   background-size: cover;
+}
+
+.bg-overlay{ 
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;  }
+
+.bg-overlay::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.3)
 }
 
 /* ------------ Social Media Icons ----------------------- */
