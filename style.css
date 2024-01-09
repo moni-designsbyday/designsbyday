@@ -301,6 +301,22 @@ a.bg-image { display: block;}
   background-color: transparent;
 }
 
+.mini-collage {
+  position: relative;
+}
+
+.polaroid {
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  position: absolute;
+  transform: rotate(-5deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the rotation, size, margin, and box-shadow based on your preference */
+
+
 /* ------------ Typography Styles ----------------------- */
 
 .left    { text-align: left; }
@@ -690,14 +706,11 @@ textarea:focus {
   font-size: 1.5rem;
 }
 
-.still-text{
-  line-height: 0;
-}
 
 .content {
   position: absolute;
-  top: 100%;
-  left: 20%;
+  top: 110%;
+  left: 22%;
   transform: translate(-50%, -50%);
   /* height: 160px; */
   overflow: hidden;
@@ -705,21 +718,12 @@ textarea:focus {
   font-weight: 600;
   line-height: 40px;
 }
+
 .content__container {
   overflow: hidden;
   height: 40px;
-  padding: 0 90px;
 }
-.content__container:before {
-  content: "[";
-  position: absolute;
-  left: 0;
-}
-.content__container:after {
-  content: "]";
-  position: absolute;
-  right: 0;
-}
+
 .content__container:after, .content__container:before {
   position: absolute;
   top: 0;
@@ -736,10 +740,12 @@ textarea:focus {
   display: inline;
   float: left;
   margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
 }
 .content__container__list {
   margin-top: 0;
-  padding-left: 85px;
+  padding-left: 120px;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
@@ -752,6 +758,8 @@ textarea:focus {
 .content__container__list__item {
   line-height: 40px;
   margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 @-webkit-keyframes opacity {
