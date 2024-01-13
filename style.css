@@ -180,15 +180,14 @@ a.bg-image { display: block;}
 .bg-padded {padding: 25%;}
 
 .logo-main {
-  background-image: url('assets/logos/primary-logo/primary-logo.png'); 
+  background-image: url('assets/logos/primary-logo/main-logo.png'); 
   background-position: center;
   background-size: contain;
-  padding: 8%;
   background-repeat: no-repeat;
 }
 
-.logo-wrapper {
-
+.transparent-bg {
+  background-color: transparent;
 }
 
 .bg-me{
@@ -687,7 +686,7 @@ nav a:hover {
   z-index: 2;
   text-align: left;
   min-width: 10rem;
-  border: 1px solid mediumvioletred;
+  border: 1px solid red;
 }
 
 .dropdown:hover .dropdown-content{ 
@@ -713,23 +712,25 @@ nav a:hover {
 }
 
 .mobile-menu a {
-  display: block;
-  font-size: 1.2rem;
+  text-decoration: none; 
+  color: inherit; 
   padding: 5vh 5%;
-  color: var(--dark);
-  text-decoration: none;
-  
+  display: block;
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 .hamburger-button {
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-  display: inline;
-  font-weight: 200;
-  font-size: 2.2rem;
-  line-height: 0.8;
-  margin-bottom: 0;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    position: fixed;
+    right: 2rem;
+    top: 4rem;
+    z-index: 2;
 }
 
 .hamburger-button.active {
@@ -739,7 +740,15 @@ nav a:hover {
 
 /* General CSS Responsive Styles */
 .mobile-menu {
-  display: none;
+  display: none; 
+  background-color: var(accent); 
+  padding: 5%;
+  position: fixed; 
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+  text-align: center;
 }
 
 /* ------------ Contact Forms  ----------------------- */
@@ -1076,12 +1085,14 @@ header [class*=col] {
 
 	.show-md { display: block; }
 	.hide-md { display: none;  }
+  h1  { font-size: 1.7rem;}
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.3rem; }
   h4 { font-size: 1.2rem; }
   h5 { font-size: 1.1rem; }
   h6 { font-size: 1rem; }
 
+  .tall-50{min-height: 20vh;}
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -1089,7 +1100,7 @@ header [class*=col] {
 
 
 @media(max-width:48em) {
-
+  
 	.show-sm { display: block; }
 	.hide-sm { display: none;  }
 

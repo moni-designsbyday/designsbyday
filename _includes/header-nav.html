@@ -1,29 +1,31 @@
 
-<div class="bg-light padded-sm hide-md">
-    <a href="/index.html" class="logo center">
-    <h1 >Designs by Day</h1>
+<div class="bg-light padded-sm  grid-center">
+    <a href="/index.html" class="col-3 bg-image transparent-bg logo-main center tall-10">
     </a>
 </div>
 
 
 <div>    
     <hr class="full-width-divider">
-    <nav class="sm-text-center center hide-md menu-nav-size padded-xs bg-accent ">
+    <nav class="sm-text-center center hide-sm menu-nav-size padded-xs bg-accent ">
         <a href="/about-me.html">About Me</a>
         <a href="/portfolio.html">Portfolio</a>
         <a href="/contact-me.html">Contact Me</a>
         <a href="/faqs.html">FAQs</a>
     </nav>
-    {% include mobile-menu.html %}
-    <hr class="full-width-divider">
+    <hr class="full-width-divider hide-sm">
 </div>
 
-<!-- IGNORE THIS IS THE MOBILE INFORMATION -->
+<div class="col-7 right mobile-show">
+    <a class="hamburger-button"> &#9776; </a>
+  </div>
+</header>
 
-<nav class="mobile-menu bg-featured padded hide-md">
-    <a href="/index.html">Home</a>
+<div class="mobile-menu"> 
+  <nav> 
     <a href="/about-me.html">About Me</a>
     <a href="/portfolio.html">Portfolio</a>
     <a href="/contact-me.html">Contact Me</a>
     <a href="/faqs.html">FAQs</a>
- </nav>
+  </nav>
+</div> 

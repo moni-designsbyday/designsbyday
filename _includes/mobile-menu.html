@@ -1,13 +1,85 @@
-<div class="show-md center bg-accent padded-xs">
-    <div class=".logo"></div>
-    <div class="hamburger-button">
-        <a class="">&#9776</a>
+<section class="grid-middle bg-accent">
+    <div class="col-5 padded-xs">
+        <a href="#" class="bg-image left padded-l-0 logo-main tall-10 transparent-bg"> </a>
+    </div> 
+    <div class="col-7 right mob-show padded">
+        <a class="hamburger-button"> &#9776; </a>
     </div>
+</section>
+
+<div class="mobile-menu"> 
+    <nav> 
+      <a href="#"> Link One </a>
+      <a href="#"> Link Two </a>
+      <a href="#"> Link Three </a>
+      <a href="#"> Link Four </a>
+    </nav>
 </div>
-</div>
-<nav class="mobile-menu bg-featured padded center">
-    <a href="/about-me.html">About Me</a>
-    <a href="/portfolio.html">Portfolio</a>
-    <a href="/contact-me.html">Contact Me</a>
-    <a href="/faqs.html">FAQs</a>
-</nav>
+
+
+<!--    FOR NOW THIS IS ALL TURNED OFF. I WILL TURN IT BACK ON WHEN I HAVE THE MENTAL SPACE TO DEAL WITH THE BUGS  
+    
+    <section>
+    <div class="show-md center bg-accent padded-xs">
+        <div class="logo"></div>
+        <div class="hamburger-button">
+            <a class="">&#9776</a>
+
+        <svg class="ham hamRotate ham4 hamburger-button" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                    class="line top"
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path
+                    class="line middle"
+                    d="m 70,50 h -40" />
+            <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
+    </div>
+    <nav class="mobile-menu bg-featured padded center">
+        <a href="/about-me.html">About Me</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/contact-me.html">Contact Me</a>
+        <a href="/faqs.html">FAQs</a>
+    </nav>
+
+    THIS IS THE CSS THAT GOES WITH THE ABOVE CODE
+
+    .ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+</section> -->
+
