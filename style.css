@@ -1034,6 +1034,21 @@ textarea:focus {
   margin-right: 10px; /* Adjust as needed for spacing */
 }
 
+/* NEED TO CHECK THIS AS I DON'T KNOW WHAT HAS HAPPENED. THERE IS NO WAY TO CHECK IT 
+
+.vertical-line {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 1px; /* Width of the vertical line */
+  background-color: var(--accent); 
+  display: inline-block;
+  margin-right: 10px; /* Adjust as needed for spacing */
+} */
+
 /* ---------- OTHER ---------- */
 
 hr.short {
