@@ -1043,10 +1043,10 @@ textarea:focus {
   left: 0;
   transform: translateY(-50%);
   height: 100%;
-  width: 1px; /* Width of the vertical line */
+  width: 1px; Width of the vertical line 
   background-color: var(--accent); 
   display: inline-block;
-  margin-right: 10px; /* Adjust as needed for spacing */
+  margin-right: 10px; Adjust as needed for spacing 
 } */
 
 /* ---------- OTHER ---------- */
