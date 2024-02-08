@@ -1149,6 +1149,8 @@ header [class*=col] {
 
     .subtle-heading-xs {
       font-weight: 300;
-      font-family: 'Martel', serif; 
+    }
+    .h4-phone {
+      font-size: 1rem;
     }
 }
