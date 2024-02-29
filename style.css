@@ -180,7 +180,7 @@ a.bg-image { display: block;}
 .bg-padded {padding: 25%;}
 
 .logo-main {
-  background-image: url('assets/logos/primary-logo/main-logo.png'); 
+  background-image: url('assets/logos/main-logo.png'); 
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
